@@ -1,0 +1,10 @@
+# Get the number from the user
+try:  
+ num = int(input("Enter a number to display its multiplication table: "))
+except ValueError:
+  print("Invalid input. Please enter an integer.")
+    exit()
+
+print(f"Multiplication table of {num}:")
+for i in range(1, 11):  # This will iterate from 1 up to (but not including) 11
+    print(f"{num} x {i} = {num * i}")
